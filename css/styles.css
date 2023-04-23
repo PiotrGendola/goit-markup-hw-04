@@ -49,8 +49,6 @@ ul {
 .lorem-gap {
     display: flex;
     gap: 30px;
-    /* padding: 94px 0px 0px; */
-
     margin: 0 auto;
 }
 
