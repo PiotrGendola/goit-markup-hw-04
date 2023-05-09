@@ -164,11 +164,17 @@ ul {
 .portfolio-button:focus {
     background-color: var(--web-style-color);
     color: var(--bright-font-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .figure {
     margin: 0 auto;
     max-width: 100%;
+}
+
+.figure:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .studio-figure {
@@ -189,7 +195,15 @@ ul {
 }
 
 .section-h1 {
-    background-color: var(--h1-background-color);
+    /* background-color: var(--h1-background-color); */
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/wallpaper.jpg');
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -253,7 +267,7 @@ ul {
     display: block;
     text-align: center;
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
 .portfolio-team-names {
@@ -304,6 +318,7 @@ ul {
 .contact-link-top:focus,
 .contact-link-top:hover {
     color: var(--web-style-color);
+    fill: var(--web-style-color);
 }
 
 .street-contact-link-bottom {
@@ -327,6 +342,11 @@ ul {
     color: var(--web-style-color);
 }
 
+.section-our-clients {
+    margin: 0 auto;
+    padding: 178px 0px 94px;
+}
+
 .footer {
     background-color: var(--footer-background-color);
     padding-top: 60px;
@@ -344,4 +364,122 @@ ul {
 .nav-font:focus,
 .nav-font:hover {
     color: var(--web-style-color);
+}
+
+.lorem-icon {
+    margin: 0 auto;
+    padding: 25px 100px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+.icon {
+    fill: #afb1b8;
+    height: 44px;
+    width: 44px;
+    margin: 0 5px;
+    padding: 12px;
+}
+
+.icon:focus,
+.icon:hover {
+    background-color: var(--web-style-color);
+    border-radius: 50%;
+    fill: #ffffff;
+}
+
+.contact-icon {
+    fill: var(--p-caption-link-font-color);
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+    fill: var(--web-style-color);
+    color: #var(--web-style-color);
+}
+
+.footer-icon {
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    margin: 0 5px;
+    padding: 12px;
+}
+
+.footer-icon:focus,
+.footer-icon:hover {
+    background-color: var(--web-style-color);
+    border-radius: 50%;
+    fill: #ffffff;
+}
+
+.join-us {
+    color: #ffffff;
+}
+
+.footer-display {
+    max-width: 1200px;
+    justify-content: left;
+    gap: 70px;
+}
+
+.our-clients-icon-yaco,
+.our-clients-icon-company-sheets,
+.our-clients-icon-company,
+.our-clients-icon-foster-peters,
+.our-clients-icon-brand,
+.our-clients-icon-company-box {
+    fill: #afb1b8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin: 0 15px;
+}
+
+.our-clients-icon-yaco {
+    padding: 24.71px 65px 20.58px 64px;
+}
+.our-clients-icon-company-sheets {
+    padding: 20.71px 65px 19.29px;
+}
+.our-clients-icon-company {
+    padding: 24.71px 64.86px 26.12px 61.68px;
+}
+.our-clients-icon-foster-peters {
+    padding: 22.7px 49.56px 28.68px 61.68px;
+}
+.our-clients-icon-brand {
+    padding: 22.77px 53.46px 23.8px 54px;
+}
+.our-clients-icon-company-box {
+    padding: 22.77px 38.21px 25.31px 38px;
+}
+.our-clients-icon-yaco:hover,
+.our-clients-icon-company-sheets:hover,
+.our-clients-icon-company:hover,
+.our-clients-icon-foster-peters:hover,
+.our-clients-icon-brand:hover,
+.our-clients-icon-company-box:hover,
+.our-clients-icon-yaco:focus,
+.our-clients-icon-company-sheets:focus,
+.our-clients-icon-company:focus,
+.our-clients-icon-foster-peters:focus,
+.our-clients-icon-brand:focus,
+.our-clients-icon-company-box:focus {
+    fill: var(--web-style-color);
+    border-color: var(--web-style-color);
+    cursor: pointer;
+}
+
+.social-media {
+    padding-bottom: 30px;
+}
+
+.footer-social-media {
+    fill: #ffffff;
 }
