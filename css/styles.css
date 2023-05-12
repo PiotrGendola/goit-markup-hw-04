@@ -10,6 +10,7 @@
     --header-line-color: #ececec;
     --card-line-color: #eeeeee;
     --our-team-background-color: #f5f4fa;
+    --icon-color: #afb1b8;
 }
 
 body {
@@ -80,6 +81,8 @@ ul {
 .header-adress {
     display: flex;
     gap: 50px;
+    margin: 0px;
+    /* padding: 0px; */
 }
 
 .header-line {
@@ -313,6 +316,9 @@ ul {
     color: var(--p-caption-link-font-color);
     text-decoration: none;
     font-style: normal;
+    fill: var(--icon-color);
+    display: flex;
+    gap: 10px;
 }
 
 .contact-link-top:focus,
@@ -344,7 +350,7 @@ ul {
 
 .section-our-clients {
     margin: 0 auto;
-    padding: 178px 0px 94px;
+    padding: 0px 0px 98px;
 }
 
 .footer {
@@ -369,12 +375,14 @@ ul {
 .lorem-icon {
     margin: 0 auto;
     padding: 25px 100px;
-    background-color: #f5f4fa;
+    background-color: var(--our-team-background-color);
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
 }
 
 .icon {
-    fill: #afb1b8;
+    fill: var(--icon-color);
     height: 44px;
     width: 44px;
     margin: 0 5px;
@@ -389,15 +397,8 @@ ul {
 }
 
 .contact-icon {
-    fill: var(--p-caption-link-font-color);
     margin: 0px;
     padding-top: 0px;
-}
-
-.contact-icon:hover,
-.contact-icon:focus {
-    fill: var(--web-style-color);
-    color: #var(--web-style-color);
 }
 
 .footer-icon {
@@ -418,7 +419,7 @@ ul {
 }
 
 .join-us {
-    color: #ffffff;
+    color: var(--bright-font-color);
 }
 
 .footer-display {
@@ -433,10 +434,10 @@ ul {
 .our-clients-icon-foster-peters,
 .our-clients-icon-brand,
 .our-clients-icon-company-box {
-    fill: #afb1b8;
+    fill: var(--icon-color);
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
     margin: 0 15px;
 }
@@ -481,5 +482,5 @@ ul {
 }
 
 .footer-social-media {
-    fill: #ffffff;
+    fill: var(--bright-font-color);
 }
