@@ -230,6 +230,7 @@ ul {
 }
 
 .h2-style {
+    color: var(--global-font-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
